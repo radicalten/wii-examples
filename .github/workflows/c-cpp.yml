@@ -18,5 +18,5 @@ jobs:
     - name: upload
       uses: actions/upload-artifact@v4
       with: 
-        path: *.dol
+        path: /
           
