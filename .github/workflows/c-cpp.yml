@@ -17,5 +17,6 @@ jobs:
          make -f Makefile -j$(nproc)
     - name: upload
       uses: actions/upload-artifact@v4
-        path: |
-          .dol
+      with: 
+        path: .dol
+          
