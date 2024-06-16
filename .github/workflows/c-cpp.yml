@@ -12,8 +12,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
     - name: Compile
       run: |
         make wii -j$(nproc)
