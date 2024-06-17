@@ -2,7 +2,7 @@ DATESTRING	:=	$(shell date +%Y)$(shell date +%m)$(shell date +%d)
 #---------------------------------------------------------------------------------
 # Clear the implicit built in rules
 #---------------------------------------------------------------------------------
-.SUFFIXES:
+
 #---------------------------------------------------------------------------------
 ifeq ($(strip $(DEVKITPPC)),)
 $(error "Please set DEVKITPPC in your environment. export DEVKITPPC=<path to>devkitPPC")
