@@ -7,7 +7,7 @@ static void *xfb = NULL;
 static GXRModeObj *rmode = NULL;
 
 //---------------------------------------------------------------------------------
-int main() {
+int main(int argc, char **argv) {
 //---------------------------------------------------------------------------------
 
 	// Initialise the video system
