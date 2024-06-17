@@ -17,7 +17,7 @@ include $(DEVKITPPC)/wii_rules
 #---------------------------------------------------------------------------------
 TARGET		:=	$(notdir $(CURDIR))
 BUILD		:=	build
-SOURCES		:=	source
+SOURCES		:=	templates/application/source 
 DATA		:=	
 INCLUDES	:=
 
@@ -39,7 +39,7 @@ LIBS	:=	-lwiiuse -lbte -logc -lm
 # list of directories containing libraries, this must be the top level containing
 # include and lib
 #---------------------------------------------------------------------------------
-LIBDIRS	:= 
+LIBDIRS	:= templates/library
 
 #---------------------------------------------------------------------------------
 # no real need to edit anything past this point unless you need to add additional
