@@ -11,7 +11,9 @@ jobs:
     steps:
     - name: Install dependencies
       run: |
-         wget https://apt.devkitpro.org/install-devkitpro-pacman \ chmod +x ./install-devkitpro-pacman \ sudo ./install-devkitpro-pacman
+         wget https://apt.devkitpro.org/install-devkitpro-pacman 
+         chmod +x ./install-devkitpro-pacman
+         sudo ./install-devkitpro-pacman
     - name: Checkout
       uses: actions/checkout@v4
     - name: Compile
