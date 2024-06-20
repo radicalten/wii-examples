@@ -5,7 +5,7 @@
 
 #include <grrlib.h>
 
-// void *xfb = NULL;
+void *xfb[2]  GRR_INITS(NULL, NULL);
 GXRModeObj *rmode;
 
 //---------------------------------------------------------------------------------
