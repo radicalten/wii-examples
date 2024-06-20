@@ -6,7 +6,7 @@
 #include <ogc/lwp_watchdog.h>
 #include <wiiuse/wpad.h>
 
-#include <SDL/SDL2.h>
+#include <SDL.h>
 
 #define FIFO_SIZE (256*1024)
 #define STATE_GEOMETRY 1
