@@ -12,13 +12,15 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: Create Directory
+    - name: Download and extract library for grrlib
       run: |
-         mkdir \grr\GRRLIB\lib\pngu
-         mkdir \grr\GRRLIB\GRRLIB
-    - name: Install grrlib
+        wget -O library.tar.gz https://github.com/GRRLIB/GRRLIB/archive/refs/tags/v4.5.1.tar.gz
+        mkdir library
+        tar -xf library.tar.gz -C library --strip-components=1
+    - name: Setup and use library
       run: |
-        sudo dkp-pacman --sync --needed --noconfirm libfat-ogc ppc-libpng ppc-freetype ppc-libjpeg-turbo
+        wget -O library.tar.gz https://github.com/GRRLIB/GRRLIB/archive/refs/tags/v4.5.1.tar.gz
+        cd library
     - name: Compile
       run: |
          cd templates/application/
