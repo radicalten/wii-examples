@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: Grrlib
+    - name: Install Grrlib
       run: |
          git clone https://github.com/GRRLIB/GRRLIB.git
          cd GRRLIB/GRRLIB/
