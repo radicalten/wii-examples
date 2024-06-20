@@ -6,7 +6,7 @@
 #include <grrlib.h>
 
 // void *xfb = NULL;
-GXRModeObj *rmode = NULL;
+GXRModeObj *rmode;
 
 //---------------------------------------------------------------------------------
 int main(int argc, char **argv) {
