@@ -3,6 +3,8 @@
 #include <gccore.h>
 #include <wiiuse/wpad.h>
 
+#include <grrlib.h>
+
 static void *xfb = NULL;
 static GXRModeObj *rmode = NULL;
 
