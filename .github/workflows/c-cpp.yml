@@ -12,6 +12,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+    - name: Install grrlib
+      run: |
+         cd \grr\GRRLIB
+         pacman --sync --needed --noconfirm libfat-ogc ppc-libpng ppc-freetype ppc-libjpeg-turbo
+         make clean all install
     - name: Compile
       run: |
          cd templates/application/
