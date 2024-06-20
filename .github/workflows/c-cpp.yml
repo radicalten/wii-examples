@@ -12,11 +12,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+    - name: Create Directory
+      run: |
+         mkdir \grr\GRRLIB\lib\pngu
+         mkdir \grr\GRRLIB\GRRLIB
     - name: Install grrlib
       run: |
-        wget https://apt.devkitpro.org/install-devkitpro-pacman
-        chmod +x ./install-devkitpro-pacman
-        sudo ./install-devkitpro-pacman
         sudo (dkp-)pacman --sync --needed --noconfirm libfat-ogc ppc-libpng ppc-freetype ppc-libjpeg-turbo
     - name: Compile
       run: |
