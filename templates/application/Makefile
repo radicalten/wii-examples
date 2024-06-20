@@ -33,7 +33,7 @@ LDFLAGS	=	-g $(MACHDEP) -Wl,-Map,$(notdir $@).map
 #---------------------------------------------------------------------------------
 # any extra libraries we wish to link with the project
 #---------------------------------------------------------------------------------
-LIBS	:= -lwiiuse -lbte -logc -lm -lSDL2 -lSDL2_gfx -lSDL2_image -lSDL2_mixer -lSDL2_ttf -lopengx
+LIBS	:= -lwiiuse -lbte -logc -lm -lSDL2
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing
