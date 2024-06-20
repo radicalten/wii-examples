@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+    - name: Create Directory
+      run: mkdir \grr\GRRLIB
     - name: Install grrlib
       run: |
          cd \grr\GRRLIB
