@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
 	VIDEO_Configure(rmode);
 
 	// Tell the video hardware where our display memory is
-	VIDEO_SetNextFramebuffer(xfb);
+	VIDEO_SetNextFramebuffer(xfb[0]);
 
 	// Make the display visible
 	VIDEO_SetBlack(false);
