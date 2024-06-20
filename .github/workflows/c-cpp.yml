@@ -18,12 +18,13 @@ jobs:
          mkdir \grr\GRRLIB\GRRLIB
     - name: Install grrlib
       run: |
+         sudo apt-get update
          cd \grr\GRRLIB\lib\pngu
-         make clean all install
+         sudo apt-get make clean all install
          cd \grr\GRRLIB\GRRLIB
-         make clean all install
+         sudo apt-get make clean all install
          cd \grr\GRRLIB\GRRLIB
-         make PLATFORM=cube clean all install
+         sudo apt-get make PLATFORM=cube clean all install
     - name: Compile
       run: |
          cd templates/application/
