@@ -4,7 +4,6 @@
 #include <wiiuse/wpad.h>
 
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_main.h>
 
 static void *xfb = NULL;
 static GXRModeObj *rmode = NULL;
