@@ -3,7 +3,7 @@
 #include <gccore.h>
 #include <wiiuse/wpad.h>
 
-#include <../SDL_ogcpixels.h>
+#include <SDL.h>
 
 static void *xfb = NULL;
 static GXRModeObj *rmode = NULL;
