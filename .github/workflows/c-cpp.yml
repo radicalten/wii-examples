@@ -13,12 +13,17 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Create Directory
-      run: mkdir \grr\GRRLIB
+      run: |
+         mkdir \grr\GRRLIB\lib\pngu
+         mkdir \grr\GRRLIB\GRRLIB
     - name: Install grrlib
       run: |
-         cd \grr\GRRLIB
-         pacman --sync --needed --noconfirm libfat-ogc ppc-libpng ppc-freetype ppc-libjpeg-turbo
+         cd \grr\GRRLIB\lib\pngu
          make clean all install
+         cd \grr\GRRLIB\GRRLIB
+         make clean all install
+         cd \grr\GRRLIB\GRRLIB
+         make PLATFORM=cube clean all install
     - name: Compile
       run: |
          cd templates/application/
