@@ -18,7 +18,7 @@ jobs:
          mkdir \grr\GRRLIB\GRRLIB
     - name: Install grrlib
       run: |
-        sudo (dkp)-pacman --sync --needed --noconfirm libfat-ogc ppc-libpng ppc-freetype ppc-libjpeg-turbo
+        sudo dkp-pacman --sync --needed --noconfirm libfat-ogc ppc-libpng ppc-freetype ppc-libjpeg-turbo
     - name: Compile
       run: |
          cd templates/application/
